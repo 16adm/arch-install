@@ -116,6 +116,7 @@ Server = http://mirrors.163.com/archlinux/$repo/os/$arch
 ##### yay -S ranger ffmpegthumbnailer w3m
 ##### yay -D --asdeps ffmpegthumbnailer w3m
 ##### yay -S lxappearance-gtk3 lxrandr-gtk3 pcmanfm-gtk3
+##### yay -S screenkey
 #### 终端小工具
 ##### yay -S neofetch htop unimatrix exa sxiv
 #### 解压
