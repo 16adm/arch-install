@@ -89,8 +89,7 @@ Server = http://mirrors.163.com/archlinux/$repo/os/$arch
 #### 安装vim:
 ##### yay -S neovim python-pynvim xclip
 ##### yay -D --asdeps python-pynvim xclip
-##### sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
-       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+##### sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 ##### nvim
 ##### :PlugInstall
 #### 安装emacs:
