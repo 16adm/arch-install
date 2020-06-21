@@ -128,5 +128,5 @@ Server = http://mirrors.163.com/archlinux/$repo/os/$arch
 #### 配置蓝牙
 ##### yay -S bluez rofi-bluetooth-git
 #### 其他
-##### yay -S expressvpn syncthing
+##### yay -S expressvpn syncthing redshift
 [fn:2]如果连接android设备或u盘有权限问题，则lsusb找到设备，chmod 666 $device
