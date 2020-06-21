@@ -1,8 +1,10 @@
 # arch-install
 
-* 准备
-** 可引导U盘
-**** ISO地址: https://mirrors.tuna.tsinghua.edu.cn/archlinux/iso/latest/
+##准备
+
+###可引导U盘
+
+####ISO地址: https://mirrors.tuna.tsinghua.edu.cn/archlinux/iso/latest/
 **** ventoy地址: https://github.com/ventoy/Ventoy/releases
 **** 制作可引导盘
 ***** tar -xzvf *.tar.gz
