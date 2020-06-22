@@ -129,4 +129,5 @@ Server = http://mirrors.163.com/archlinux/$repo/os/$arch
 ##### yay -S bluez rofi-bluetooth-git
 #### 其他
 ##### yay -S expressvpn syncthing redshift
+##### yay -S wps-office-cn google-chrome
 [fn:2]如果连接android设备或u盘有权限问题，则lsusb找到设备，chmod 666 $device
