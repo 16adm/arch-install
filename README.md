@@ -75,7 +75,7 @@
 ##### sudo sed -i '$a 199.232.69.133 raw.githubusercontent.com' /etc/hosts
 #### 安装yay:
 ##### sudo vi /etc/pacman.d/mirrorlist
-## Arch Linux repository mirrorlist
+##### Arch Linux repository mirrorlist
     Server = http://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch
     Server = http://mirrors.163.com/archlinux/$repo/os/$arch
 ##### sudo sed -i '$a [archlinuxcn]' /etc/pacman.conf
@@ -132,4 +132,10 @@
 #### 其他
 ##### yay -S expressvpn syncthing redshift
 ##### yay -S wps-office-cn wps-office-mui-zh-cn google-chrome
+#### 自动登录
+##### sudo mkdir /etc/systemd/system/getty@tty1.service.d
+##### sudo vi /etc/systemd/system/getty@tty1.service.d/override.conf
+    [Service]
+    ExecStart=
+    ExecStart=-/usr/bin/agetty --autologin shieh --noclear %I $TERM
     [fn:2]如果连接android设备或u盘有权限问题，则lsusb找到设备，chmod 666 $device
