@@ -138,4 +138,3 @@
     [Service]
     ExecStart=
     ExecStart=-/usr/bin/agetty --autologin shieh --noclear %I $TERM
-    [fn:2]如果连接android设备或u盘有权限问题，则lsusb找到设备，chmod 666 $device
