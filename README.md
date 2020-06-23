@@ -30,23 +30,23 @@
 ##### mkinitcpio : default
 ##### bootloader : sytemd-boot
 ###### /boot/loader/loader.conf
-'default arch
-timeout 1
-console-mode max
-editor no
-auto-entries 0
-auto-firmware 0'
+    default arch
+    timeout 1
+    console-mode max
+    editor no
+    auto-entries 0
+    auto-firmware 0'
 ###### /boot/loader/entries/arch.conf
-title Arch
-linux /vmlinuz-linux
-initrd /intel-ucode.img
-initrd /initramfs-linux.img
-options root=PARTUUID=xxxxxxxxxxxxxxxxxxxxxxxx rw quiet systemd.show_status=0
+    title Arch
+    linux /vmlinuz-linux
+    initrd /intel-ucode.img
+    initrd /initramfs-linux.img
+    options root=PARTUUID=xxxxxxxxxxxxxxxxxxxxxxxx rw quiet systemd.show_status=0
 ##### root passwd : ######
 ##### Ctrl+c
 #### 重启进入新系统: reboot
-[fn:1]fifo安装：base base-devel linux linux-headers intel-ucode linux-firmware usbutils dhcpcd vi git gptfdisk efibootmgr dosfstools
-[fn:2]boot分区必须标识为EFI，否则无法安装，在gdisk里的命令为：t -> 1 -> EF00
+    [fn:1]fifo安装：base base-devel linux linux-headers intel-ucode linux-firmware usbutils dhcpcd vi git gptfdisk efibootmgr dosfstools
+    [fn:2]boot分区必须标识为EFI，否则无法安装，在gdisk里的命令为：t -> 1 -> EF00
 ## 后续系统完善
 #### 添加用户:
 ##### useradd -m -g users -G wheel -s /bin/bash $username
@@ -62,22 +62,22 @@ options root=PARTUUID=xxxxxxxxxxxxxxxxxxxxxxxx rw quiet systemd.show_status=0
 ##### sudo locale-gen
 #### DHCP网络:
 ##### sudo vi /etc/systemd/network/20-wired.network
-[Match]
-Name=enp3s0
-[Network]
-DHCP=ipv4
+    [Match]
+    Name=enp3s0
+    [Network]
+    DHCP=ipv4
 ##### sudo vi /etc/systemd/network/25-wireless.network
-[Match]
-Name=wlp0s20u13
-[Network]
-DHCP=ipv4
+    [Match]
+    Name=wlp0s20u13
+    [Network]
+    DHCP=ipv4
 ##### sudo systemctl enable networkd
 ##### sudo sed -i '$a 199.232.69.133 raw.githubusercontent.com' /etc/hosts
 #### 安装yay:
 ##### sudo vi /etc/pacman.d/mirrorlist
 ## Arch Linux repository mirrorlist
-Server = http://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch
-Server = http://mirrors.163.com/archlinux/$repo/os/$arch
+    Server = http://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch
+    Server = http://mirrors.163.com/archlinux/$repo/os/$arch
 ##### sudo sed -i '$a [archlinuxcn]' /etc/pacman.conf
 ##### sudo sed -i '$a Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch' /etc/pacman.conf
 ##### sudo rm -rf /etc/pacman.d/gnupg
@@ -132,4 +132,4 @@ Server = http://mirrors.163.com/archlinux/$repo/os/$arch
 #### 其他
 ##### yay -S expressvpn syncthing redshift
 ##### yay -S wps-office-cn wps-office-mui-zh-cn google-chrome
-[fn:2]如果连接android设备或u盘有权限问题，则lsusb找到设备，chmod 666 $device
+    [fn:2]如果连接android设备或u盘有权限问题，则lsusb找到设备，chmod 666 $device
