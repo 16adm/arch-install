@@ -30,12 +30,12 @@
 ##### mkinitcpio : default
 ##### bootloader : sytemd-boot
 ###### /boot/loader/loader.conf
-default arch
+'default arch
 timeout 1
 console-mode max
 editor no
 auto-entries 0
-auto-firmware 0
+auto-firmware 0'
 ###### /boot/loader/entries/arch.conf
 title Arch
 linux /vmlinuz-linux
