@@ -71,7 +71,7 @@
     Name=wlp0s20u13
     [Network]
     DHCP=ipv4
-##### sudo systemctl enable networkd
+##### sudo systemctl enable systemd-networkd.service
 ##### sudo sed -i '$a 199.232.69.133 raw.githubusercontent.com' /etc/hosts
 #### 安装yay:
 ##### sudo vi /etc/pacman.d/mirrorlist
