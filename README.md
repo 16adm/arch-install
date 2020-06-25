@@ -126,12 +126,12 @@
 #### 配置键盘
 ##### yay -S interception-caps2esc
 #### 配置自动挂载
-##### yay -S udskie udisks2 gvfs-mtp gvfs-gphoto2 [fn:2]
+##### yay -S udskie udisks2 gvfs-mtp gvfs-gphoto2
 #### 配置蓝牙
 ##### yay -S bluez rofi-bluetooth-git
 #### 其他
 ##### yay -S expressvpn syncthing redshift
-##### yay -S wps-office-cn wps-office-mui-zh-cn google-chrome
+##### yay -S wps-office-cn wps-office-mui-zh-cn google-chrome adhosts
 #### 自动登录
 ##### sudo mkdir /etc/systemd/system/getty@tty1.service.d
 ##### sudo vi /etc/systemd/system/getty@tty1.service.d/override.conf
