@@ -108,8 +108,8 @@
 ##### yay -D --asdeps nvidia-utils
 ##### yay -S alsa-utils alsa-plugins pulseaudio pulseaudio-alsa pulsemixer
 ##### yay -D --asdeps alsa-plugins pulseaudio pulseaudio-alsa
-##### yay -S i3-gaps xorg-xinit
-##### yay -D --asdeps xorg-xinit
+##### yay -S i3-gaps xorg-xinit unclutter
+##### yay -D --asdeps xorg-xinit unclutter
 #### 安装应用
 ##### yay -S rofi polybar alacritty picom qutebrowser nitrogen mpv
 ##### yay -S zathura zathura-pdf-poppler
