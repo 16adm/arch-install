@@ -125,6 +125,11 @@
 ##### yay -S zip unzip unrar p7zip
 #### 配置键盘
 ##### yay -S interception-caps2esc
+##### /etc/udevmon.yaml
+    - JOB: "intercept -g $DEVNODE | caps2esc | uinput -d $DEVNODE"
+       DEVICE:
+           EVENTS:
+               EV_KEY: [KEY_CAPSLOCK, KEY_ESC]
 #### 配置自动挂载
 ##### yay -S udskie udisks2 gvfs-mtp gvfs-gphoto2
 #### 配置蓝牙
