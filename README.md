@@ -117,7 +117,7 @@
 ##### yay -S ranger ffmpegthumbnailer w3m
 ##### yay -D --asdeps ffmpegthumbnailer w3m
 ##### yay -S lxappearance-gtk3 lxrandr-gtk3 pcmanfm-gtk3 gruvbox-dark-icons-gtk gruvbox-dark-gtk
-##### yay -S screenkey
+##### yay -S screenkey scrot
 #### 终端小工具
 ##### yay -S neofetch xdotool htop unimatrix exa sxiv
 ##### yay -D --asdeps xdotool
