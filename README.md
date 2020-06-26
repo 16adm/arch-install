@@ -97,7 +97,7 @@
 ##### git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d
 ##### ~/.emacs.d/bin/doom install
 ##### doomsy
-##### yay -S ripgrep
+##### yay -S --asdeps ripgrep
 #### 安装字体
 ##### yay -S otf-nerd-fonts-fira-code otf-mplus adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts
 #### 安装输入法
