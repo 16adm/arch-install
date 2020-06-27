@@ -112,7 +112,13 @@
 ##### sudo sed -i '$a ### Enable bluetooth' /etc/bluetooth/pulse/system.pa
 ##### sudo sed -i '$a load-module module-bluetooth-policy' /etc/bluetooth/pulse/system.pa
 ##### sudo sed -i '$a load-module module-bluetooth-discover' /etc/bluetooth/pulse/system.pa
-##### sudo sed -i '$a AutoEnable=true' /etc/bluetooth/main.conf
+##### sudo sudo vi /etc/bluetooth/main.conf
+    [General]
+    DiscoverableTimeout = 0
+    Discoverable=true
+    AlwaysPairable=true
+    [Policy]
+    AutoEnable=true
 ##### sudo systemctl enable bluetooth.service
 ##### sudo systemctl start bluetooth.service
 ##### pulseaudio -k
@@ -122,6 +128,7 @@
     >>defualt-agent
     >>scan on
     >>pair xx:xx:xx:xx:xx:xx
+    >>trust xx:xx:xx:xx:xx:xx
     >>connect xx:xx:xx:xx:xx:xx
     >>quit
 
