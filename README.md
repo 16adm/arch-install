@@ -45,7 +45,7 @@
 ##### root passwd : ######
 ##### Ctrl+c
 #### 重启进入新系统: reboot
-    [fn:1]fifo安装：base base-devel linux linux-headers intel-ucode linux-firmware usbutils dhcpcd vi git gptfdisk efibootmgr dosfstools
+    [fn:1]fifo安装：base base-devel linux linux-headers intel-ucode linux-firmware usbutils dhcpcd vi git gptfdisk efibootmgr dosfstools man-db
     [fn:2]boot分区必须标识为EFI，否则无法安装，在gdisk里的命令为：t -> 1 -> EF00
 ## 后续系统完善
 #### 添加用户:
@@ -97,23 +97,19 @@
 ##### git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d
 ##### ~/.emacs.d/bin/doom install
 ##### doomsy
-##### yay -S --asdeps ripgrep
+##### yay -S ripgrep
 #### 安装字体
 ##### yay -S otf-nerd-fonts-fira-code otf-mplus adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts
 #### 安装输入法
-##### yay -S fcitx fcitx-rime fcitx-qt5 fcitx-hangul
-##### yay -D --asdeps fcitx
+##### yay -S fcitx-rime fcitx-qt5 fcitx-hangul
 #### 安装WM
-##### yay -S nvidia-utils nvidia-dkms
-##### yay -D --asdeps nvidia-utils
-##### yay -S alsa-utils alsa-plugins pulseaudio pulseaudio-alsa pulsemixer
-##### yay -D --asdeps alsa-plugins pulseaudio pulseaudio-alsa
+##### yay -S nvidia-dkms
+##### yay -S alsa-utils pulseaudio-alsa pulsemixer
+##### yay -D --asdeps pulseaudio-alsa
 ##### yay -S i3-gaps xorg-xinit unclutter
-##### yay -D --asdeps xorg-xinit unclutter
 #### 安装应用
 ##### yay -S rofi polybar alacritty picom qutebrowser nitrogen mpv
-##### yay -S zathura zathura-pdf-poppler
-##### yay -D --asdeps zathura
+##### yay -S zathura-pdf-poppler
 ##### yay -S ranger ffmpegthumbnailer w3m
 ##### yay -D --asdeps ffmpegthumbnailer w3m
 ##### yay -S lxappearance-gtk3 lxrandr-gtk3 pcmanfm-gtk3 gruvbox-dark-icons-gtk gruvbox-dark-gtk
