@@ -108,11 +108,26 @@
 ##### sudo pacman -S yay
 
 #### 蓝牙
-##### yay -S bluez rofi-bluetooth-git
+##### yay -S bluez pulseaudio-bluetooth bluez-utils
+##### sudo sed -i '$a ### Enable bluetooth' /etc/bluetooth/pulse/system.pa
+##### sudo sed -i '$a load-module module-bluetooth-policy' /etc/bluetooth/pulse/system.pa
+##### sudo sed -i '$a load-module module-bluetooth-discover' /etc/bluetooth/pulse/system.pa
+##### sudo sed -i '$a AutoEnable=true' /etc/bluetooth/main.conf
+##### sudo systemctl enable bluetooth.service
+##### sudo systemctl start bluetooth.service
+##### pulseaudio -k
+##### bluetoothctl
+    >>power on
+    >>agent on
+    >>defualt-agent
+    >>scan on
+    >>pair xx:xx:xx:xx:xx:xx
+    >>connect xx:xx:xx:xx:xx:xx
+    >>quit
 
 #### 键盘
 ##### yay -S interception-caps2esc
-##### /etc/udevmon.yaml
+##### sudo vi /etc/udevmon.yaml
     - JOB: "intercept -g $DEVNODE | caps2esc | uinput -d $DEVNODE"
        DEVICE:
            EVENTS:
