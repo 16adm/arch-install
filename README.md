@@ -152,7 +152,8 @@
 ##### yay -S -asdeps gvfs-mtp gvfs-gphoto2
 
 #### 其他 
-##### yay -S wps-office-cn wps-office-mui-zh-cn ttf-wps-fonts google-chrome
+##### yay -S wps-office-cn google-chrome
+##### yay -S --asdeps wps-office-mui-zh-cn ttf-wps-fonts
 
 #### 登录
 ##### sudo mkdir /etc/systemd/system/getty@tty1.service.d
