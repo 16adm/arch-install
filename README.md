@@ -73,6 +73,22 @@
     Name=wlp0s20u13
     [Network]
     DHCP=ipv4
+##### sudo pacman -S wpa_supplicant
+##### sudo vi /etc/wpa_supplicant-wlp0s20u13.conf
+    ctrl_interface=/run/wpa_supplicant
+    ctrl_interface_group=wheel
+    update_config=1
+    
+    network={
+                        ssid=""
+                        psk=""
+                        }
+    
+    network={
+                        ssid=""
+                        psk=""
+                        }
+##### sudo systemctl enable wpa_supplicant@wlp0s20u13
 ##### sudo systemctl enable systemd-networkd.service
 ##### sudo sed -i '$a 199.232.69.133 raw.githubusercontent.com' /etc/hosts
 ##### sudo pacman -U xv-{version}.pkg.tar.xz
