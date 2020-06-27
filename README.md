@@ -18,7 +18,7 @@
 ##### editor : vi
 ##### mirrorlist : china
 ##### partition : gdisk
-*boot分区必须标识为EFI，否则无法安装，在gdisk里的命令为：t -> 1 -> EF00*
+    boot分区必须标识为EFI，否则无法安装，在gdisk里的命令为：t -> 1 -> EF00
 ##### fstab : PARTUUID
 ##### hostname : z97d
 ##### timezone : asia/shanghai
@@ -41,9 +41,8 @@
     options root=PARTUUID=xxxxxxxxxxxxxxxxxxxxxxxx rw quiet systemd.show_status=0
 ##### root passwd : ######
 ##### reboot
-**fifo安装：
-   base base-devel linux linux-headers intel-ucode linux-firmware 
-   usbutils dhcpcd vi git gptfdisk efibootmgr dosfstools**
+      base base-devel linux linux-headers intel-ucode linux-firmware 
+      usbutils dhcpcd vi git gptfdisk efibootmgr dosfstools
 
 ## 安装基本系统
 
