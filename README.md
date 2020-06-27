@@ -42,7 +42,7 @@
 ##### root passwd : ######
 ##### reboot
       base base-devel linux linux-headers intel-ucode linux-firmware 
-      usbutils dhcpcd vi git gptfdisk efibootmgr dosfstools
+      usbutils vi git gptfdisk efibootmgr dosfstools
 
 ## 安装基本系统
 
