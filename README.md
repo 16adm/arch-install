@@ -115,7 +115,7 @@
 ##### yay -S lxappearance-gtk3 lxrandr-gtk3 pcmanfm-gtk3 gruvbox-dark-icons-gtk gruvbox-dark-gtk
 ##### yay -S screenkey scrot
 #### 终端小工具
-##### yay -S neofetch xdotool htop unimatrix exa sxiv
+##### yay -S man-db neofetch xdotool htop unimatrix exa sxiv
 ##### yay -D --asdeps xdotool
 #### 解压
 ##### yay -S zip unzip unrar p7zip
