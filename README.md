@@ -144,7 +144,7 @@
 ##### yay -S nvidia-dkms alsa-utils pulsemixer xorg-xinit polybar alacritty picom qutebrowser mpv ranger
 ##### yay -S --asdeps pulseaudio-alsa i3-gaps rofi nitrogen zathura-pdf-poppler ffmpegthumbnailer w3m 
 ##### yay -S lxappearance-gtk3 lxrandr-gtk3 pcmanfm-gtk3 gruvbox-dark-icons-gtk gruvbox-dark-gtk
-##### yay -S man-db screenkey scrot unclutter neofetch unimatrix-git exa sxiv redshift
+##### yay -S man-db screenkey scrot unclutter neofetch unimatrix-git exa sxiv redshift adhosts
 ##### yay -S --asdeps xdotool imagemagick
 
 #### 挂载
@@ -152,7 +152,7 @@
 ##### yay -S -asdeps gvfs-mtp gvfs-gphoto2
 
 #### 其他 
-##### yay -S wps-office-cn wps-office-mui-zh-cn google-chrome adhosts
+##### yay -S wps-office-cn wps-office-mui-zh-cn ttf-wps-fonts google-chrome
 
 #### 登录
 ##### sudo mkdir /etc/systemd/system/getty@tty1.service.d
