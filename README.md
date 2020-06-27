@@ -55,6 +55,8 @@
 ##### visudo
 ##### logout ; login as $username
 #### Git:
+##### sudo pacman -D --asdeps git gptfdisk dosfstools linux linux-headers linux-firmware
+##### sudo pacman -S --asdeps linux-zen linux-zen-headers
 ##### git clone git://github.com/16adm/dotfile-z97d
 #### Locale
 ##### sudo vi /etc/locale.gen
@@ -84,7 +86,7 @@
 ##### sudo pacman-key --init
 ##### sudo pacman-key --populate archlinux
 ##### sudo pacman -Sy archlinux-keyring archlinuxcn-keyring
-##### sudo pacman -S pacman-contrib
+##### sudo pacman -S --asdeps pacman-contrib
 ##### sudo pacman -S yay
 #### 安装vim:
 ##### yay -S neovim python-pynvim xclip
@@ -103,20 +105,17 @@
 #### 安装输入法
 ##### yay -S fcitx-rime fcitx-qt5 fcitx-hangul
 #### 安装WM
-##### yay -S nvidia-dkms
-##### yay -S alsa-utils pulseaudio-alsa pulsemixer
-##### yay -D --asdeps pulseaudio-alsa
-##### yay -S i3-gaps xorg-xinit unclutter
+##### yay -S nvidia-dkms alsa-utils pulsemixer xorg-xinit unclutter
+##### yay -S --asdeps pulseaudio-alsa i3-gaps
 #### 安装应用
-##### yay -S rofi polybar alacritty picom qutebrowser nitrogen mpv
-##### yay -S zathura-pdf-poppler
-##### yay -S ranger ffmpegthumbnailer w3m
-##### yay -D --asdeps ffmpegthumbnailer w3m
+##### yay -S rofi polybar alacritty picom qutebrowser nitrogen mpv ranger
+##### yay -D --asdeps rofi nitrogen
+##### yay -S --asdeps zathura-pdf-poppler ffmpegthumbnailer w3m
 ##### yay -S lxappearance-gtk3 lxrandr-gtk3 pcmanfm-gtk3 gruvbox-dark-icons-gtk gruvbox-dark-gtk
 ##### yay -S screenkey scrot
 #### 终端小工具
-##### yay -S man-db neofetch xdotool htop unimatrix exa sxiv
-##### yay -D --asdeps xdotool
+##### yay -S man-db neofetch xdotool htop unimatrix exa sxiv imagemagick
+##### yay -D --asdeps xdotool imagemagick
 #### 解压
 ##### yay -S zip unzip unrar p7zip
 #### 配置键盘
@@ -127,7 +126,8 @@
            EVENTS:
                EV_KEY: [KEY_CAPSLOCK, KEY_ESC]
 #### 配置自动挂载
-##### yay -S udskie udisks2 gvfs-mtp gvfs-gphoto2
+##### yay -S udiskie gvfs-mtp gvfs-gphoto2
+##### yay -D -asdeps gvfs-mtp gvfs-gphoto2
 #### 配置蓝牙
 ##### yay -S bluez rofi-bluetooth-git
 #### 其他
