@@ -169,6 +169,9 @@
 ##### yay -S man-db screenkey scrot unclutter neofetch unimatrix-git exa sxiv redshift adhosts
 ##### yay -S --asdeps xdotool imagemagick
 
+##### 下载
+##### yay -S aria2-fast ariang-allinone
+
 #### 挂载
 ##### yay -S udiskie syncthing
 ##### yay -S -asdeps gvfs-mtp gvfs-gphoto2
