@@ -133,12 +133,12 @@
     >>quit
 
 #### 键盘
-##### yay -S interception-caps2esc
+##### yay -S interception-caps2esc interception-space2meta
 ##### sudo vi /etc/udevmon.yaml
-    - JOB: "intercept -g $DEVNODE | caps2esc | uinput -d $DEVNODE"
+    - JOB: "intercept -g $DEVNODE | caps2esc | space2meta | uinput -d $DEVNODE"
        DEVICE:
            EVENTS:
-               EV_KEY: [KEY_CAPSLOCK, KEY_ESC]
+               EV_KEY: [KEY_CAPSLOCK, KEY_ESC, KEY_SPACE]
 
 #### VIM 
 ##### yay -S neovim
