@@ -42,7 +42,7 @@
 ##### root passwd : ######
 ##### reboot
       base base-devel linux linux-headers intel-ucode linux-firmware 
-      usbutils vi git gptfdisk efibootmgr dosfstools wpa_supplicant
+      usbutils vi git gptfdisk efibootmgr dosfstools wpa_supplicant net-tools
 
 ## 安装基本系统
 
