@@ -490,7 +490,7 @@ select_linux_version() {
       elif [ "linux-zen (tuned kernel)" == "$VERSION" ]; then
         pacstrap "${MOUNTPOINT}" base linux-zen linux-zen-headers
       fi
-      pacstrap "${MOUNTPOINT}" intel-ucode linux-firmware usbutils vi git wpa_supplicant
+      pacstrap "${MOUNTPOINT}" intel-ucode linux-firmware usbutils vi git wpa_supplicant net-tools
       break
     else
       invalid_option
