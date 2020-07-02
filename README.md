@@ -166,7 +166,7 @@
 ##### yay -S nvidia-dkms alsa-utils pulsemixer xorg-xinit polybar alacritty picom qutebrowser mpv ranger rofi
 ##### yay -S --asdeps pulseaudio-alsa i3-gaps nitrogen zathura-pdf-poppler ffmpegthumbnailer w3m 
 ##### yay -S lxappearance-gtk3 lxrandr-gtk3 pcmanfm-gtk3 gruvbox-dark-icons-gtk gruvbox-dark-gtk
-##### yay -S man-db screenkey scrot unclutter neofetch unimatrix-git exa sxiv redshift adhosts
+##### yay -S man-db screenkey scrot unclutter neofetch unimatrix-git exa sxiv redshift adhosts tealdeer
 ##### yay -S --asdeps xdotool imagemagick
 
 ##### 下载
