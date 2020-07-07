@@ -73,7 +73,7 @@
     Name=wlp0s20u13
     [Network]
     DHCP=ipv4
-##### sudo vi /etc/wpa_supplicant-wlp0s20u13.conf
+##### sudo vi /etc/wpa_supplicant/wpa_supplicant-wlp0s20u13.conf
     ctrl_interface=/run/wpa_supplicant
     ctrl_interface_group=wheel
     update_config=1
