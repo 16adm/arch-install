@@ -170,7 +170,7 @@
 ##### yay -S --asdeps xdotool imagemagick
 
 ##### 下载
-##### yay -S aria2-fast ariang-allinone you-get
+##### yay -S aria2-fast ariang-allinone you-get youtube-dl
 
 #### 挂载
 ##### yay -S udiskie syncthing
