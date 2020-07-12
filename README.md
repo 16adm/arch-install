@@ -154,7 +154,7 @@
 ##### doomsy & doomck
 
 #### 字体
-##### yay -S otf-nerd-fonts-fira-code otf-mplus adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts
+##### yay -S otf-nerd-fonts-fira-code otf-mplus adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts adobe-source-han-sans-jp-fonts adobe-source-han-sans-kr-fonts
 
 #### 输入
 ##### yay -S fcitx-rime fcitx-qt5 fcitx-hangul
